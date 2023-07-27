@@ -1,0 +1,24 @@
+{
+    "name": "yellowcard/module-blog",
+    "description": "",
+    "type": "magento2-module",
+    "license": [
+        ""
+    ],
+    "keywords": [
+        "magento2",
+        "blog"
+    ],
+    "require": {
+        "php": "~8.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "YellowCard\\Blog\\": ""
+        }
+    },
+    "version": "1.0.0"
+}
