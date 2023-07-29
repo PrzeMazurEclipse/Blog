@@ -8,13 +8,13 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="yellowcard_blog_post" resource="default" engine="innodb" comment="Post Table">
-        <column xsi:type="int" name="entity_id" unsigned="true" nulllable="false" identity="true" comment="Entity Id"/>
+        <column xsi:type="int" name="id" unsigned="true" nulllable="false" identity="true" comment="Id"/>
         <column xsi:type="varchar" name="title" nulllable="false" length="255" comment="Post title"/>
         <column xsi:type="mediumtext" name="content" nulllable="true" comment="Post Content"/>
         <column xsi:type="timestamp" name="created_at" on_update="false" nulllable="false" default="CURRENT_TIMESTAMP"
                 comment="Post Created At"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="entity_id"/>
+            <column name="id"/>
         </constraint>
     </table>
 </schema>
