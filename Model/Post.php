@@ -4,12 +4,13 @@ namespace Yellowcard\Blog\Model;
 
 use Magento\Catalog\Model\AbstractModel;
 use YellowCard\Blog\Api\Data\PostInterface;
+use YellowCard\Blog\Model\ResourceModel\Post as PostResourceModel;
 
 class Post extends AbstractModel implements PostInterface
 {
     protected function _construct()
     {
-        $this->_init(ResourceModel/Post::class);
+        $this->_init(PostResourceModel::class);
     }
 
     public function getTitle()

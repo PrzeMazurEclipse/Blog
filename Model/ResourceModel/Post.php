@@ -8,7 +8,7 @@ use Magento\Rule\Model\ResourceModel\AbstractResource;
 
 class Post extends AbstractResource
 {
-    const MAIN_TABLE = 'yallowcard_blog_post';
+    const MAIN_TABLE = 'yellowcard_blog_post';
     const ID_FIELD_NAME = 'id';
 
     protected function _construct()
