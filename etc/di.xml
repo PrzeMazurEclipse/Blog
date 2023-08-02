@@ -1,4 +1,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="YellowCard\Blog\Api\Data\PostInterface" type="YellowCard\Blog\Model\Post"/>
     <preference for="YellowCard\Blog\Api\PostRepositoryInterface" type="YellowCard\Blog\Model\PostRepository"/>
+    <type name="YellowCard\Blog\Observer\LogPostDetailView">
+        <plugin name="yellowcard_blog_add_data_to_post_detail_observer" type="YellowCard\Blog\Plugin\AddDataToPostDetailObserver"/>
+    </type>
 </config>
