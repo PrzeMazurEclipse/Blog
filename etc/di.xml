@@ -4,4 +4,7 @@
     <type name="YellowCard\Blog\Observer\LogPostDetailView">
         <plugin name="yellowcard_blog_add_data_to_post_detail_observer" type="YellowCard\Blog\Plugin\AddDataToPostDetailObserver"/>
     </type>
+    <type name="YellowCard\Blog\Controller\Post\Detail">
+        <plugin name="yellowcard_blog_alternate_post_detail_template" type="YellowCard\Blog\Plugin\AlternatePostDetailTemplate"/>
+    </type>
 </config>

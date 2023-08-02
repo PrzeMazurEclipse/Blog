@@ -1,0 +1,12 @@
+<?php
+/** @var Magento\Framework\View\Element\Template $block */
+/** @var Magento\Framework\Escaper $escaper */
+/** @var YellowCard\Blog\ViewModel\Post $postVm */
+$postVm = $block->getData('post_vm');
+$post = $postVm->getDetail();
+?>
+<div class="blog-post-detail">
+    <h1><?= $escaper->escapeHtml($post->getTitle()) ?></h1>
+<!--    there is no created time in this .phtml, that's the difference-->
+    <p><?= $escaper->escapeHtml($post->getContent(), ['em', 'p', 'strong']) ?></p>
+</div>
