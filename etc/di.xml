@@ -8,4 +8,5 @@
     <type name="YellowCard\Blog\Controller\Post\Detail">
         <plugin name="yellowcard_blog_alternate_post_detail_template" type="YellowCard\Blog\Plugin\AlternatePostDetailTemplate"/>
     </type>
+    <preference for="YellowCard\Blog\Controller\Post\Detail" type="YellowCard\Blog\Controller\Post\PreferenceForDetail"/>
 </config>
