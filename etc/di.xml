@@ -3,7 +3,7 @@
     <preference for="YellowCard\Blog\Api\PostRepositoryInterface" type="YellowCard\Blog\Model\PostRepository"/>
     <type name="YellowCard\Blog\Observer\LogPostDetailView">
         <plugin name="yellowcard_blog_add_data_to_post_detail_observer" type="YellowCard\Blog\Plugin\AddDataToPostDetailObserver"/>
-        <plugin name="yellowcard_blog_prevent_post_detail_logger" type="YellowCard\Blog\Plugin\PreventPostDetailLogger"/>
+        <plugin name="yellowcard_blog_prevent_post_detail_logger" type="YellowCard\Blog\Plugin\PreventPostDetailLogger" disabled="true"/>
     </type>
     <type name="YellowCard\Blog\Controller\Post\Detail">
         <plugin name="yellowcard_blog_alternate_post_detail_template" type="YellowCard\Blog\Plugin\AlternatePostDetailTemplate"/>
